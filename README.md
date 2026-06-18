@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# Chronicles of War — Historical Battles Map
 
-## Project info
+An interactive timeline map of major battles and wars from 0 AD to present day, built with React and TypeScript.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Getting Started
 
-## How can I edit this code?
+### Prerequisites
 
-There are several ways of editing your application.
+- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/rakeshkumar167/war-atlas.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd war-atlas
 
-# Step 3: Install the necessary dependencies.
+# Step 3: Install dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will open at `http://localhost:5173` with hot module reloading enabled.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Development
 
-**Use GitHub Codespaces**
+### Available Scripts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `npm run dev` - Start the development server with auto-reloading
+- `npm run build` - Build the project for production
+- `npm run build:dev` - Build with development mode
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview the production build locally
+- `npm test` - Run tests once
+- `npm run test:watch` - Run tests in watch mode
 
-## What technologies are used for this project?
+## Technologies
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and dev server
+- **TypeScript** - Static type checking
+- **React** - UI library
+- **React Router** - Client-side routing
+- **shadcn/ui** - Accessible UI components
+- **Tailwind CSS** - Utility-first CSS framework
+- **Leaflet** - Interactive maps
+- **Recharts** - Data visualization
+- **Framer Motion** - Animation library
 
-## How can I deploy this project?
+## Editing
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Edit files in your preferred IDE and push changes to the repository. All changes will be automatically reflected on the live site.
 
-## Can I connect a custom domain to my Lovable project?
+### Edit in GitHub
 
-Yes, you can!
+- Navigate to the desired file(s)
+- Click the "Edit" button (pencil icon) at the top right
+- Make your changes and commit
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Use GitHub Codespaces
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Click the "Code" button (green) on the main repository page
+- Select the "Codespaces" tab
+- Click "New codespace" to launch a development environment
+- Edit files directly and commit/push your changes
+
+## Deployment
+
+The project can be deployed to any static hosting service. Build the production version with:
+
+```sh
+npm run build
+```
+
+The `dist/` folder contains the optimized production files ready for deployment.
